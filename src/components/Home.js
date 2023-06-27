@@ -1,11 +1,8 @@
-import React from 'react'
+import React from 'react';
 import CountryList from './countryList';
 
-
-const Home = () => {
-  return (
-    <CountryList />
-  )
-}
+const Home = () => (
+  <CountryList />
+);
 
 export default Home;

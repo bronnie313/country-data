@@ -1,40 +1,40 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid;
-    justify-content: space-between;
-    background-color: #ec4c8a;
-    padding: 1em;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid;
+  justify-content: space-between;
+  background-color: #ec4c8a;
+  padding: 1em;
 }
 
 ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 5rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 5rem;
 }
 
 .header-btn {
-    border: none;
-    background: none;
+  border: none;
+  background: none;
 }
 
 .header-icon {
-    width: 1.5rem;
+  width: 1.5rem;
 }
 
 .header-icon2 {
-    width: 2rem;
+  width: 2rem;
 }
 
 .back {
-    font-size: 2rem;
-    color: white;
+  font-size: 2rem;
+  color: white;
 }
