@@ -1,9 +1,11 @@
 import React from 'react'
+import CountryList from './countryList';
+
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <CountryList />
   )
 }
 
-export default Home
+export default Home;
