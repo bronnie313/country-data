@@ -23,6 +23,26 @@ const countries = [
     population: '599.99 ',
     country: 'Kenya',
   },
+  {
+    id: '5',
+    population: '599.99 ',
+    country: 'Burindi',
+  },
+  {
+    id: '6',
+    population: '599.99 ',
+    country: 'Sudan',
+  },
+  {
+    id: '7',
+    population: '599.99 ',
+    country: 'egypt',
+  },
+  {
+    id: '8',
+    population: '599.99 ',
+    country: 'Cameroon',
+  },
 ];
 
 const CountryList = () => (
