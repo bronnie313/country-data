@@ -1,65 +1,41 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Country from './country';
 import './styles/countryList.css';
+import { getCountries } from '../features/countries/countriesSlice';
 
-const countries = [
-  {
-    id: '1',
-    population: '399.99',
-    country: 'Uganda',
-  },
-  {
-    id: '2',
-    population: '499.99',
-    country: 'Tanzania',
-  },
-  {
-    id: '3',
-    population: '699.99',
-    country: 'Rwanda',
-  },
-  {
-    id: '4',
-    population: '599.99 ',
-    country: 'Kenya',
-  },
-  {
-    id: '5',
-    population: '599.99 ',
-    country: 'Burindi',
-  },
-  {
-    id: '6',
-    population: '599.99 ',
-    country: 'Sudan',
-  },
-  {
-    id: '7',
-    population: '599.99 ',
-    country: 'egypt',
-  },
-  {
-    id: '8',
-    population: '599.99 ',
-    country: 'Cameroon',
-  },
-];
+const CountryList = () => {
+  const { countries } = useSelector((store) => store.country);
+  const dispatch = useDispatch();
 
-const CountryList = () => (
-  <section>
-    <div className="countries">
-      {countries.map((item) => {
-        const { country, population } = item;
-        return (
-          <Country
-            country={country}
-            population={population}
-            key={item.id}
-          />
-        );
-      })}
-    </div>
-  </section>
-);
+  // countries.forEach((country) => {
+  //   console.log(country.flags[1]);
+  // })
+
+  useEffect(() => {
+    dispatch(getCountries());
+  }, []);
+
+  return (
+    <section>
+      <div className="countries">
+        {countries.map((item) => {
+          const { name, population, flags } = item;
+          const { common } = name;
+          const [, flagURLW320]= flags;
+
+          return (
+            <Country
+              country={common}
+              population={population}
+              flags={flagURLW320}
+              key={item.id}
+            />
+          );
+        })}
+      </div>
+    </section>
+  );
+};
 
 export default CountryList;

@@ -2,6 +2,7 @@ import React from 'react';
 
 const GoIcon = () => (
   <svg
+    style={{ color: 'white' }}
     stroke="currentColor"
     fill="currentColor"
     strokeWidth="0"

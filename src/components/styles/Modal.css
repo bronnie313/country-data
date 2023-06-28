@@ -1,16 +1,33 @@
 aside {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 4.3rem;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #fd5294;
-    color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 4.3rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fd5294;
+  color: white;
 }
 
 .image {
-    width: 50%;
+  width: 50%;
+}
+
+.modal-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.modal-ul > li {
+  background: #ec4c8a;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.modal-ul > li:nth-child(2n) {
+  background: transparent;
 }

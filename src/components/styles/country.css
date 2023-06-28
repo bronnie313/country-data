@@ -2,9 +2,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid;
   padding: 1rem;
-  height: 15rem;
+  background-color: #d14078;
+  border: 0.5px solid hsl(336.75deg 53.96% 64.56%);
+}
+
+.country:nth-child(2),
+.country:nth-child(3),
+.country:nth-child(6),
+.country:nth-child(7),
+.country:nth-child(10),
+.country:nth-child(14) {
+  background-color: #ec4c8a;
 }
 
 .go-btn {
@@ -12,4 +21,15 @@
   background: inherit;
   border: none;
   align-self: end;
+}
+
+.img {
+  width: 100%;
+  align-self: center;
+}
+
+.info {
+  align-self: end;
+  color: #fff;
+  font-weight: 600;
 }
