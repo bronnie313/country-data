@@ -4,15 +4,17 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import './styles/country.css';
 import GoIcon from './icons';
-import { OpenModal } from '../features/modal/modalSlice';
+import { OpenModal } from '../features/countries/countriesSlice';
 
 const Country = (props) => {
-  const { country, population, flags } = props;
+  const {
+    id, country, population, flags,
+  } = props;
   const dispatch = useDispatch();
 
   const handleClick = (e) => {
     e.preventDefault();
-    dispatch(OpenModal());
+    dispatch(OpenModal(id));
   };
 
   return (
@@ -35,10 +37,11 @@ const Country = (props) => {
   );
 };
 
-Country.prototype = {
-   flags: PropTypes.string.isRequired,
-   population: PropTypes.string.isRequired,
-   country: PropTypes.string.isRequired,
-}
+Country.propTypes = {
+  id: PropTypes.number.isRequired,
+  flags: PropTypes.string.isRequired,
+  population: PropTypes.number.isRequired,
+  country: PropTypes.string.isRequired,
+};
 
 export default Country;

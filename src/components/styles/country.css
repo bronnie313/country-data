@@ -12,6 +12,7 @@
 .country:nth-child(6),
 .country:nth-child(7),
 .country:nth-child(10),
+.country:nth-child(11),
 .country:nth-child(14) {
   background-color: #ec4c8a;
 }

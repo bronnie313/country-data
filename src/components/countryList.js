@@ -8,27 +8,26 @@ const CountryList = () => {
   const { countries } = useSelector((store) => store.country);
   const dispatch = useDispatch();
 
-  // countries.forEach((country) => {
-  //   console.log(country.flags[1]);
-  // })
-
   useEffect(() => {
     dispatch(getCountries());
-  }, []);
+  }, [dispatch]);
 
   return (
     <section>
       <div className="countries">
         {countries.map((item) => {
-          const { name, population, flags } = item;
+          const {
+            id, name, population, flags,
+          } = item;
           const { common } = name;
-          const [, flagURLW320]= flags;
+          const [, flagURLW320] = flags;
 
           return (
             <Country
               country={common}
               population={population}
               flags={flagURLW320}
+              id={id}
               key={item.id}
             />
           );

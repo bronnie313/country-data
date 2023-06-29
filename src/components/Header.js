@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import './styles/Header.css';
 
 const Header = () => {
-  const { isOpen } = useSelector((store) => store.modal);
+  const { isOpen } = useSelector((store) => store.country);
   return (
     <nav>
       <button className="header-btn back" type="button">

@@ -22,20 +22,33 @@ export const getCountries = createAsyncThunk('country/getCountries', async () =>
 const initialState = {
   countries: [],
   isLoading: false,
+  isOpen: false,
+  selectedCountryId: null,
 };
 
 const countriesSlice = createSlice({
   name: 'country',
   initialState,
-  reducers: {},
+  reducers: {
+    OpenModal: (state, action) => {
+      state.isOpen = true;
+      state.selectedCountryId = action.payload;
+    },
+    closeModal: (state) => {
+      state.isOpen = false;
+      state.selectedCountryId = null;
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getCountries.pending, (state) => {
         state.isLoading = true;
       })
       .addCase(getCountries.fulfilled, (state, action) => {
-        state.countries = action.payload;
-        // console.log(action.payload);
+        const countriesWithIds = action.payload.map((country, index) => ({
+          ...country, id: index + 1,
+        }));
+        state.countries = countriesWithIds;
         state.isLoading = false;
       })
       .addCase(getCountries.rejected, (state) => {
@@ -43,5 +56,6 @@ const countriesSlice = createSlice({
       });
   },
 });
+export const { OpenModal, closeModal } = countriesSlice.actions;
 
 export default countriesSlice.reducer;
