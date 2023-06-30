@@ -1,15 +1,21 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import './styles/Header.css';
+import { closeModal } from '../features/countries/countriesSlice';
 
 const Header = () => {
   const { isOpen } = useSelector((store) => store.country);
+  const dispatch = useDispatch();
+
+  const handleClickBack = () => {
+    dispatch(closeModal());
+  };
+
   return (
     <nav>
-      <button className="header-btn back" type="button">
+      <button className="header-btn back" onClick={handleClickBack} type="button">
         <NavLink to="/">
-          {isOpen ? '<' : '<2015' }
+          {isOpen ? 'Back' : '2015 Global'}
         </NavLink>
       </button>
       <ul>
