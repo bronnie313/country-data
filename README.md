@@ -1,70 +1,252 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
 
-## Available Scripts
+Modify this file to match your project and remove sections that don't apply.
 
-In the project directory, you can run:
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
 
-### `npm start`
+OPTIONAL SECTIONS:
+- FAQ
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After you're finished please remove all the comments and instructions!
+-->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+<img src="https://banner2.cleanpng.com/20180630/vpg/kisspng-globe-earth-world-map-frigo-5b372d70114521.9865716115303427680708.jpg" alt="logo" width="250"  height="auto" />
 
-### `npm test`
+  <br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+  # World Statistics
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- TABLE OF CONTENTS -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 📗 Table of Contents
 
-### `npm run eject`
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- PROJECT DESCRIPTION -->
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# 📖 COUNTRY DATA <a name="about-project"></a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Country Data is a React capstone project which is a mobile web application to check a list of metrics for a specific country and it's created using React and Redux. It is powered by an API that provides numeric data and it contains a search bar to search for a desired country.
 
-## Learn More
+## ScreenShots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![home-picture](https://github.com/bronnie313/country-data/assets/37089236/ed716433-f967-4f27-8a38-20781457a39b)
+![details-picture](https://github.com/bronnie313/country-data/assets/37089236/7c183316-363d-4a60-88c7-d96c6e3a3c1f)
+![Search-picture](https://github.com/bronnie313/country-data/assets/37089236/d13f179f-cc52-4fc2-b531-1a8875601359)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## 🛠 Built With <a name="built-with"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Tech Stack <a name="tech-stack"></a>
+A project was built Using
 
-### Analyzing the Bundle Size
+<details>
+  <summary>React</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<details>
+  <summary>React-redux</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
+</details>
 
-### Making a Progressive Web App
+<details>
+  <summary>JSX</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Key Features <a name="key-features"></a>
+
+- **Home Page**
+- **Details Page**
+- **Search Option**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [See WEB here](https://bronnie313.github.io/Leader-Board/dist/)  -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+` Install VSCode or Atom `
+
+<!--
+Example command:
+
+```sh
+ gem install rails
+```
+ -->
+
+### Setup
+
+Clone this repository to your desired folder: 
+` cd my-folder 
+git clone git @https://github.com/bronnie313/country-data.git `
+
+### Install
+
+Install this project with: ` cd country-data npm install `
+
+<!--
+Example command:
+
+```sh
+  cd my-project
+  gem install
+```
+--->
+
+### Usage
+
+To run the project, execute the following command: ` npm run build `
+
+<!--
+Example command:
+
+```sh
+  rails server
+```
+--->
+
+### Run tests
+
+To run tests, run the following command:` npm start `
+
+<!--
+Example command: ` npm run test `
+
+```sh
+  bin/rails test test/models/article_test.rb
+```
+--->
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+You can deploy this project using: ` using Render `
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!--
+Example:
+
+```sh
+
+```
+ -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+- GitHub: [@bronnie313](https://github.com/bronnie313)
+- Twitter: [@bisaso_r](https://twitter.com/bisaso_r)
+- LinkedIn: [Ronald Bisaso](https://linkedin.com/in/BisasoRonald)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Like Option**
+- [ ] **Comment Option**
+- [ ] **refresh**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [Country-data](https://github.com/bronnie313/country-data/issues).
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project I'm grateful for your support but you can also give me a star at my GitHub account
+https://github.com/bronnie313/country-data
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+
+I want to thank all of you for your constant hard work and dedication. And I would like to thank Nelson Sakwa on Behance for sharing and allowing us to make use of his awesome designs. 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://github.com/bronnie313/country-data/blob/develop/LICENSE) licensed.
