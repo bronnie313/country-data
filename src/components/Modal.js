@@ -5,7 +5,6 @@ import './styles/Modal.css';
 
 const Modal = () => {
   const { countries, selectedCountryId } = useSelector((store) => store.country);
-  console.log(countries);
   const selectedCountry = countries.find((country) => country.id === selectedCountryId);
 
   if (!selectedCountry) {
@@ -87,8 +86,14 @@ export const SelectedModal = (props) => {
 };
 
 SelectedModal.propTypes = {
+  flags: PropTypes.string.isRequired,
   population: PropTypes.number.isRequired,
   area: PropTypes.number.isRequired,
+  capital: PropTypes.string.isRequired,
+  region: PropTypes.string.isRequired,
+  continent: PropTypes.string.isRequired,
+  googleMaps: PropTypes.string.isRequired,
+  country: PropTypes.string.isRequired,
 };
 
 export default Modal;

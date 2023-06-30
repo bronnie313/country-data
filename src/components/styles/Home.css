@@ -1,19 +1,21 @@
 .image {
-    width: 20%;
+  width: 20%;
 }
 
 .home-img {
-    background: #fd5294;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  background: #fd5294;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .stats {
-    display: flex;
-    color: #fff;
-    background: #e04783;
-    padding: 1rem;
-    font-size: smaller;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background: #e04783;
+  padding: 1rem;
+  font-size: x-small;
 }
