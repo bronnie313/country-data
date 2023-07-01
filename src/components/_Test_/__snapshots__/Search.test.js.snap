@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`home component testing if page matches 1`] = `
+<div>
+  <input
+    className="search-input"
+    id="search"
+    name="search"
+    onChange={[Function]}
+    placeholder="search counrty"
+    type="search"
+  />
+</div>
+`;
