@@ -68,9 +68,10 @@ Country Data is a React capstone project which is a mobile web application to ch
 
 ## ScreenShots
 
-![home-picture](https://github.com/bronnie313/country-data/assets/37089236/ed716433-f967-4f27-8a38-20781457a39b)
-![details-picture](https://github.com/bronnie313/country-data/assets/37089236/7c183316-363d-4a60-88c7-d96c6e3a3c1f)
-![Search-picture](https://github.com/bronnie313/country-data/assets/37089236/d13f179f-cc52-4fc2-b531-1a8875601359)
+![home-picture](https://github.com/bronnie313/country-data/assets/37089236/cf9db4c8-a801-4c04-9639-445ec1ed3675)
+![details-picture](https://github.com/bronnie313/country-data/assets/37089236/2ec79868-0f41-4732-864d-e416b06eafe7)
+![Search-picture](https://github.com/bronnie313/country-data/assets/37089236/301e4b69-2a95-4b35-9b30-1c470c6d4067)
+
 
 
 ## 🛠 Built With <a name="built-with"></a>
