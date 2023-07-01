@@ -9,6 +9,11 @@
   text-decoration: none;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 nav {
   display: flex;
   align-items: center;

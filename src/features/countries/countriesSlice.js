@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
 
 const options = {
   method: 'GET',
@@ -12,8 +11,9 @@ const options = {
 
 export const getCountries = createAsyncThunk('country/getCountries', async () => {
   try {
-    const res = await axios.request(options);
-    return res.data;
+    const response = await fetch('https://rest-country-api.p.rapidapi.com/', options);
+    const data = await response.json();
+    return data;
   } catch (error) {
     return error;
   }
