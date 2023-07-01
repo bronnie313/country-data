@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`home component testing if page matches 1`] = `
+<div>
+  <div
+    className="home-img"
+  >
+    <img
+      alt="Flag"
+      className="image"
+      src="world.png"
+    />
+    <div
+      className="world"
+    >
+      <h1>
+        WORLD STATISTICS
+      </h1>
+    </div>
+  </div>
+  <div
+    className="stats"
+  >
+    <h2>
+      STATS BY COUNTRY
+    </h2>
+    <div>
+      <input
+        className="search-input"
+        id="search"
+        name="search"
+        onChange={[Function]}
+        placeholder="search counrty"
+        type="search"
+      />
+    </div>
+  </div>
+  <section>
+    <div
+      className="countries"
+    />
+  </section>
+</div>
+`;
